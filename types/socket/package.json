@@ -1,6 +1,6 @@
 {
   "name": "@hoory/be-types-socket",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "main": "lib/index.js",
   "license": "MIT",
   "repository": "git@github.com:hoory-com/hb-backend-shared.git",
