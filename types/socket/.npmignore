@@ -1,0 +1,9 @@
+.github
+.git
+.gitignore
+.eslintrc.js
+.prettierrc
+.jest.config.js
+README.md
+**/**/*.spec.ts
+**/**/*.test.ts
