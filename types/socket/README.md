@@ -15,4 +15,4 @@
 
 ## Contributing Guidelines
 
-Read through our [Contributing guidelines](https://github.com/orgs/hoory-com/teams/hoory-business/discussions/1) to learn about our submission process, coding rules and more
+Read through our [Contributing guidelines](https://github.com/orgs/hoory-com/teams/hoory-business/discussions/1) to learn about our submission process, coding rules and more.
