@@ -1,5 +1,5 @@
 name: CI/CD publish package @hoory/be-types-socket
-run-name: "Publish: @${{ github.actor }} published @hoory/be-types-socket with: ${{ github.event.pull_request.title }}"
+run-name: ${{ (github.event.pull_request.merged == false && 'CI:') || 'CD:' }} @${{ github.actor }} published @hoory/be-types-socke ${{ (github.event.pull_request.merged == false && 'pushed to:') || 'merged:' }}  "${{ github.event.pull_request.title }}"
 on:
   pull_request:
     branches:
