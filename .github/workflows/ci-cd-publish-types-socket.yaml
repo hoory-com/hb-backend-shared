@@ -9,7 +9,7 @@ on:
       - 'types/socket/**'
 jobs:
   build-and-deploy:
-    uses: hoory-com/workflows/.github/workflows/publish-public-package.yaml@master
+    uses: hoory-com/workflows/.github/workflows/publish-public-package-backend.yaml@master
     with:
       path: './types/socket'
     secrets:
