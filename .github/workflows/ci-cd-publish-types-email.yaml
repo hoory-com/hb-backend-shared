@@ -1,0 +1,17 @@
+name: CI/CD publish package @hoory/be-types-email
+run-name: ${{ (github.event.pull_request.merged == false && 'CI:') || 'CD:' }} @${{ github.actor }} published @hoory/be-types-email ${{ (github.event.pull_request.merged == false && 'pushed to:') || 'merged:' }}  "${{ github.event.pull_request.title }}"
+on:
+  pull_request:
+    branches:
+      - develop
+    types: [opened, closed, synchronize]
+    paths:
+      - 'types/email/**'
+jobs:
+  build-and-deploy:
+    uses: hoory-com/workflows/.github/workflows/publish-public-package-backend.yaml@master
+    with:
+      path: './types/email'
+    secrets:
+      HOORY_GITHUB_PAT: ${{ secrets.HOORY_GITHUB_PAT }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
