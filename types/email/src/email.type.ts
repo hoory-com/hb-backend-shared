@@ -18,7 +18,8 @@ export enum EmailTemplate {
   SUBSCRIPTION_ACTIVATED = 'subscription-activated',
   LITTLE_HELP_GUIDE = 'little-help-guide',
   EMBED_WIDGET = 'embed-widget',
-  MENTION_AGENT = 'mention-agent'
+  MENTION_AGENT = 'mention-agent',
+  VERIFY_EMAIL_ADDRESS = 'verify-email-address',
 }
 
 export enum EmailSubject {

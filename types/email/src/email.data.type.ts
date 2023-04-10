@@ -151,8 +151,16 @@ export interface SubscriptionActivatedEmailData extends EmailData {
 export interface LittleHelpGuideEmailData extends EmailData {
   firstName: string;
 }
+
 export interface EmbedWidgetEmailData extends EmailData {
   ownerFirstName: string;
   visitorEmbedCode: string;
   userEmbedCode: string;
+}
+
+export interface EmailAddressVerificationData extends EmailData {
+  receiverFirstName: string;
+  workspaceSlug: string;
+  senderFirstName: string;
+  verificationToken: string;
 }
