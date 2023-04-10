@@ -1,5 +1,6 @@
 export interface EmailData {
   unsubscriptionUrl?: string;
+  workspace_id: string;
 }
 
 export interface ResetPasswordEmailData extends EmailData {
