@@ -123,6 +123,7 @@ export interface MentionAgentData extends EmailData {
   slug: string;
   conversationId: string;
   agentFirstName: string;
+  agentLastName: string;
   mentionedFirstName: string;
   mentionedLastName: string;
   visitorFirstName: string;
